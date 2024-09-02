@@ -9,103 +9,26 @@
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script>
-            $(document).ready(function(){                    
-                $('.p1').hover(function(){                    
-                    let arriba = Math.random() * (400 - 1) +1;
-                    let abajo = Math.random() * (609 - 1) +1;
-
-                    $(this).css('top', arriba);
-                    $(this).css('left', abajo);    
-                });
-            });
-
-            function dijosi(){
-                document.getElementById('si').style.display = 'block';
-            }
-        </script>
-        <style>
-            *{
-                margin: 0px;
-                padding: 0px;
-            }
-
-            body{
-                background: #fcfcfc;
-            }
-
-            .contenedor{
-                margin: auto;
-                width: 900px;
-                margin-top: 65px;
-                text-align: center;
-            }
-            
-            .titulo{
-                margin-bottom: 20px;
-            }
-
-            .opciones p{
-                background: black;
-                display: initial;
-                padding: 12px;
-                color: #ffffff;
-                border-radius: 2px;
-                font-weight: bold;
-            }
-
-            p.p1{
-                position: absolute;
-                top: 400px;
-                left: 500px;
-                width: 100px;
-            }
-
-            p.p1:hover{
-                background: gray;
-                cursor: pointer;
-            }
-
-            p.p2{
-                position: absolute;
-                top: 400px;
-                left: 750px;
-                width: 100px;
-            }
-
-            p.p2:hover{
-                background: gray;
-                cursor: pointer;
-            }
-            
-            #si{
-                background: #515050;
-                left: 420px;
-                position: absolute;
-                top: 122px;
-                width: 550px;
-                color: #ffffff;
-                padding: 50px;
-                display: none;
-            }
-            img{
-                margin: 0;
-                padding: 0;
-            }
-        </style>
+        <link rel="stylesheet" href="style.css">
 
     </head>
 
     <body>
         <main>       
 
-            <div class="contenedor">
-                <div class="titulo">
-                    <img src="ositos.gif" alt="" width="30%" height="30%">
-                    <h1>¿Me perdonas, quieres ser mi novia de nuevo?</h1>
+            <div class="container">
+                <div class="title">
+                    <img src="ositos.gif" alt="" width="300px">
+                    <h1>¿Me perdonas, quieres ser mi novia de nuevo? ❤️</h1>
+                </div>   
+                
+                <div class="btn">
+                    <a href="si.html">SI</a>
+                    <a href="no.html">NO</a>
                 </div>
-                <div class="opciones">
+            </div>
+
+            <!-- <div class="opciones">
                     <p class="p1">No</p>
                     <p onclick="dijosi()" class="p2">Si</p>
                     <div id="si">
@@ -113,10 +36,7 @@
                         <br>
                         <img src="ositosbesos.gif" alt="" width="30%" height="30%">
                     </div>
-                </div>
-            </div>
-
-
+                </div> -->
 
         </main>
         <footer>
